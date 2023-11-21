@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#logo {
+    width: 7%;
+}
+
+.header {
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(./Images/cirujia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+}
+
+a {
+    text-decoration: none;
+    color: #395988;
+}
+
+img {
+    border-radius: 10px;
+}
+
+#nav-menu .nav {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main {
+    margin-top: 2rem;
+}
+
+/* .nav a {
+    transition: color , background  1s ease;
+} */
+
+.nav a:hover {
+    color: #fff;
+    background: #4051e8;
+}
+
+.one,
+.two {
+    margin: 40px 10px 40px 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px -1px 20px 5px #c2c8f7;
+    width: 95%;
+}
+
+.informacion article {
+    transition: background 0.8s ease;
+}
+
+.informacion article:hover {
+    background: #adb3e3;
+}
+
+.footer {
+
+    color: #f8f9fa;
+    background: radial-gradient(79.75% 134.25% at 95.71% 100%, #000b6b 0, #0057b8 100%);
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-section p li h2 {
+    font-size: small;
+}
+
+@media (max-width: 800px) {
+    #logo {
+        width: 15%;
+    }
+    
+    .header {
+        font-size:medium;
+    }
+
+    .nav-menu {
+        width: 100%;
+    }
+
+    .one , .two {
+        flex-direction: column;
+        width: 90%;
+        margin: 20px;
+    }
+
+    .one figure , .two figure {
+        margin-top: 10px;
+    }
+}
